@@ -13,6 +13,11 @@ h1 {
     font-size: 2rem;
     color: #4DA1A9;
 }
+p {
+    text-align: center;
+    margin-left:100px;
+    margin-right:100px;
+}
 .suggestions {
     width: 100%;
     border: 1px solid #4DA1A9;
