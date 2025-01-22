@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Display Replacement Prices</title>
+    <link rel="icon" type="image/x-icon" href="./img/fav.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="company Logo" width="30" height="30" class="d-inline-block align-text-top">
+            Hela Average Display Replacement Price
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./update">Updates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./faq">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-link" target="_blank" href="https://forms.gle/LHNXazTo1SkZSkja7" title="Upload">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+<path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+                </svg>
+            </a>
+            <a class="nav-link" target="_blank" href="https://github.com/dilushanka/mobile-display-price" title="Github">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</nav>
+<hr>
+    <h1>Mobile Display Replacement Prices</h1>
+    <div class="container">
+        <div style="position: relative;">
+            <input type="text" id="searchInput" placeholder="Search mobile model..." oninput="showSuggestions()">
+            <div id="suggestions" class="suggestions" style="display: none;"></div>
+        </div>
+        <button onclick="searchPrices()">Search</button>
+        <div id="results" class="results" style="display: none;"></div>
+    </div>
+
+    <script>
+        const _0x4d68fb=_0x5489;(function(_0x845f9f,_0x2d0831){const _0x3748f8=_0x5489,_0x2571ff=_0x845f9f();while(!![]){try{const _0xeeb6b7=-parseInt(_0x3748f8(0xf8))/0x1+parseInt(_0x3748f8(0x11a))/0x2+parseInt(_0x3748f8(0x10a))/0x3+-parseInt(_0x3748f8(0x121))/0x4*(parseInt(_0x3748f8(0x10d))/0x5)+parseInt(_0x3748f8(0x10f))/0x6*(parseInt(_0x3748f8(0xfe))/0x7)+-parseInt(_0x3748f8(0x11e))/0x8+-parseInt(_0x3748f8(0x104))/0x9;if(_0xeeb6b7===_0x2d0831)break;else _0x2571ff['push'](_0x2571ff['shift']());}catch(_0x33e415){_0x2571ff['push'](_0x2571ff['shift']());}}}(_0x46c0,0x1a954));function _0x46c0(){const _0x2a145c=['div','length','none','70920ONOUgS','result-item','map','2244iPDEov','20550jxAcpG','toLowerCase','Please\x20enter\x20a\x20mobile\x20model\x20to\x20search.','price','className','appendChild','7qMvcTR','suggestions','includes','filter','\x20-\x20Rs.\x20','split','312372AZGrSV','replace','display','value','onclick','https://docs.google.com/spreadsheets/d/e/2PACX-1vS_C0AGgha0cmCh5zs8684Uhl0tyjgqigjt32fg1PCJ_EepaSnl--VEAeWzDVVBjZrK5PyGaLzwdi53/pub?output=csv','601173zDrTsW','innerHTML','getElementById','1040znNAdp','trim','527028zmkqfn','text','forEach','style','searchInput','No\x20results\x20found.','slice','model','createElement','block','textContent','2932yalZkQ'];_0x46c0=function(){return _0x2a145c;};return _0x46c0();}function _0x5489(_0xa35017,_0x33c7a9){const _0x46c028=_0x46c0();return _0x5489=function(_0x54894e,_0x365784){_0x54894e=_0x54894e-0xf8;let _0x1f8842=_0x46c028[_0x54894e];return _0x1f8842;},_0x5489(_0xa35017,_0x33c7a9);}const sheetUrl=_0x4d68fb(0x109);let mobileData=[];async function fetchSheetData(){const _0x30236b=_0x4d68fb,_0x475c0b=await fetch(sheetUrl),_0x2f1cc5=await _0x475c0b[_0x30236b(0x110)](),_0x427bdb=_0x2f1cc5['split']('\x0a')[_0x30236b(0x115)](0x1)['map'](_0x7f4143=>_0x7f4143[_0x30236b(0x103)](','));mobileData=_0x427bdb[_0x30236b(0x120)](([_0x538a2e,_0x32f717])=>({'model':_0x538a2e[_0x30236b(0x10e)]()['replace'](/^"|"$/g,''),'price':_0x32f717[_0x30236b(0x10e)]()[_0x30236b(0x105)](/^"|"$/g,'')}));}async function searchPrices(){const _0x47d29a=_0x4d68fb,_0x5d04cb=document['getElementById']('searchInput')[_0x47d29a(0x107)][_0x47d29a(0xf9)]()[_0x47d29a(0x10e)](),_0x323175=document[_0x47d29a(0x10c)]('results');_0x323175[_0x47d29a(0x10b)]='',_0x323175[_0x47d29a(0x112)][_0x47d29a(0x106)]=_0x47d29a(0x11d);if(!_0x5d04cb){alert('Please\x20enter\x20a\x20mobile\x20model\x20to\x20search.');return;}if(!mobileData[_0x47d29a(0x11c)])await fetchSheetData();const _0x3e0cd2=mobileData[_0x47d29a(0x101)](_0x1a9fdb=>_0x1a9fdb[_0x47d29a(0x116)]['toLowerCase']()['includes'](_0x5d04cb));_0x3e0cd2[_0x47d29a(0x11c)]>0x0?(_0x3e0cd2['forEach'](_0x5388c4=>{const _0x500bd6=_0x47d29a,_0x239c58=document[_0x500bd6(0x117)](_0x500bd6(0x11b));_0x239c58[_0x500bd6(0xfc)]='result-item',_0x239c58[_0x500bd6(0x119)]=_0x5388c4['model']+'\x20-\x20Rs.\x20'+parseInt(_0x5388c4[_0x500bd6(0xfb)],0xa),_0x323175[_0x500bd6(0xfd)](_0x239c58);}),_0x323175[_0x47d29a(0x112)]['display']=_0x47d29a(0x118)):(_0x323175[_0x47d29a(0x119)]=_0x47d29a(0x114),_0x323175[_0x47d29a(0x112)][_0x47d29a(0x106)]=_0x47d29a(0x118));}async function showSuggestions(){const _0x14bd32=_0x4d68fb,_0x135aeb=document[_0x14bd32(0x10c)](_0x14bd32(0x113))[_0x14bd32(0x107)][_0x14bd32(0xf9)]()[_0x14bd32(0x10e)](),_0x2e3eb1=document[_0x14bd32(0x10c)](_0x14bd32(0xff));if(!mobileData[_0x14bd32(0x11c)])await fetchSheetData();const _0x1c528d=mobileData[_0x14bd32(0x101)](_0x57c8fe=>_0x57c8fe[_0x14bd32(0x116)][_0x14bd32(0xf9)]()['includes'](_0x135aeb))[_0x14bd32(0x120)](_0x40b679=>_0x40b679['model']);_0x2e3eb1[_0x14bd32(0x10b)]='',_0x1c528d[_0x14bd32(0x11c)]>0x0&&_0x135aeb?(_0x1c528d[_0x14bd32(0x111)](_0x29a780=>{const _0x1b77db=_0x14bd32,_0x46317a=document[_0x1b77db(0x117)](_0x1b77db(0x11b));_0x46317a[_0x1b77db(0xfc)]='suggestion-item',_0x46317a['textContent']=_0x29a780,_0x46317a[_0x1b77db(0x108)]=()=>{const _0x51c686=_0x1b77db;document[_0x51c686(0x10c)](_0x51c686(0x113))[_0x51c686(0x107)]=_0x29a780,_0x2e3eb1[_0x51c686(0x112)][_0x51c686(0x106)]='none';},_0x2e3eb1['appendChild'](_0x46317a);}),_0x2e3eb1[_0x14bd32(0x112)]['display']=_0x14bd32(0x118)):_0x2e3eb1[_0x14bd32(0x112)][_0x14bd32(0x106)]='none';}async function searchPrices(){const _0x43f580=_0x4d68fb,_0x390f74=document[_0x43f580(0x10c)](_0x43f580(0x113))[_0x43f580(0x107)]['toLowerCase']()[_0x43f580(0x10e)](),_0xaf2247=document[_0x43f580(0x10c)]('results');_0xaf2247[_0x43f580(0x10b)]='',_0xaf2247[_0x43f580(0x112)][_0x43f580(0x106)]=_0x43f580(0x11d);if(!_0x390f74){alert(_0x43f580(0xfa));return;}if(!mobileData[_0x43f580(0x11c)])await fetchSheetData();const _0x11b9b0=mobileData[_0x43f580(0x101)](_0x15b854=>_0x15b854[_0x43f580(0x116)][_0x43f580(0xf9)]()[_0x43f580(0x100)](_0x390f74));_0x11b9b0[_0x43f580(0x11c)]>0x0?(_0x11b9b0[_0x43f580(0x111)](_0x5e4890=>{const _0x5adebf=_0x43f580,_0x3a1dce=document['createElement']('div');_0x3a1dce[_0x5adebf(0xfc)]=_0x5adebf(0x11f),_0x3a1dce[_0x5adebf(0x119)]=_0x5e4890[_0x5adebf(0x116)]+_0x5adebf(0x102)+_0x5e4890[_0x5adebf(0xfb)],_0xaf2247[_0x5adebf(0xfd)](_0x3a1dce);}),_0xaf2247[_0x43f580(0x112)][_0x43f580(0x106)]=_0x43f580(0x118)):(_0xaf2247['textContent']=_0x43f580(0x114),_0xaf2247['style'][_0x43f580(0x106)]='block');}fetchSheetData();
+    </script>
+    <!-- Floating button with bug icon --><button class="floating-button" onclick="openForm()" aria-label="Report a bug"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bug"><path d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A5 5 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A5 5 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623M4 7v4a4 4 0 0 0 3.5 3.97V7zm4.5 0v7.97A4 4 0 0 0 12 11V7zM12 6a4 4 0 0 0-1.334-2.982A3.98 3.98 0 0 0 8 2a3.98 3.98 0 0 0-2.667 1.018A4 4 0 0 0 4 6z"/></svg></button><!-- Overlay for popup --><div class="b-overlay" id="b-overlay" onclick="closeForm()"></div><!-- Popup form container --><div class="popup-form" id="popupForm"><button class="close-btn" onclick="closeForm()">Close</button><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYMQ9VpPMMWN9RQgo9He66iux_KbkNdJ7pf3ZnTFL2bwQTQQ/viewform?usp=dialog"
+width="100%" height="450" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div><script>function openForm(){document.getElementById('popupForm').style.display='block';document.getElementById('b-overlay').style.display='block'}
+  function closeForm(){document.getElementById('popupForm').style.display='none';document.getElementById('b-overlay').style.display='none'}</script><style>.floating-button{position:fixed;bottom:20px;right:20px;background-color:#ff5252;color:white;border:none;border-radius:50%;width:50px;height:50px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 8px rgba(0,0,0,0.3)}.popup-form{display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1000;width:90%;max-width:700px;background-color:white;box-shadow:0 4px 8px rgba(0,0,0,0.3);border-radius:8px;padding:20px}.close-btn{background-color:#ff5252;color:white;border:none;padding:5px 10px;cursor:pointer;float:right;font-size:16px;border-radius:4px}.b-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:999}</style>
+
+</body>
+</html>
