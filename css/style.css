@@ -13,11 +13,6 @@ h1 {
     font-size: 2rem;
     color: #4DA1A9;
 }
-p {
-    text-align: center;
-    margin-left:100px;
-    margin-right:100px;
-}
 .suggestions {
     width: 100%;
     border: 1px solid #4DA1A9;
@@ -72,6 +67,10 @@ button:hover {
 	 max-width: 1600px;
 	 margin: 0 auto;
 }
+.container div button{
+	position:relative;
+	top:-9px;
+   }
  .footer {
 	 position: relative;
 	 margin-top: 300px;
@@ -226,3 +225,43 @@ button:hover {
 	 animation-duration: 600s;
 }
  
+
+p {
+	margin: 0;
+  }
+  
+  .notice {
+	position: relative;
+	margin: 1em;
+	background: #F9F9F9;
+	padding: 1em 1em 1em 2em;
+	border-left: 4px solid #DDD;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+  }
+  
+  .notice:before {
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+	left: -17px;
+	background-color: #DDD;
+	color: #FFF;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+	font-family: Georgia;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .info {
+	border-color: #0074D9;
+  }
+  
+  .info:before {
+	content: "i";
+	background-color: #0074D9;
+  }
+  
